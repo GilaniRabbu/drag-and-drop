@@ -119,7 +119,7 @@ header {
 /* Navbar */
 
 nav {
-    padding: 3em 0;
+    padding: 3em 1em;
 }
 
 .nav__row {
@@ -172,7 +172,7 @@ nav {
 /* Main Section */
 
 main {
-    padding: 1em 0 3em;
+    padding: 1em 1em 3em;
 }
 
 section {
@@ -238,3 +238,61 @@ section {
 }
 
 /* Main Section */
+
+@media (max-width: 924px) {
+    .flow-content>*+* {
+        margin-top: 0;
+    }
+
+    .flex__group {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        flex-direction: column;
+        width: 300px;
+        border-radius: 10px;
+        padding: 1.5em 0;
+    }
+
+    .desc {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 2em;
+    }
+
+    .desc h2 {
+        cursor: pointer;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: var(--size-xl);
+    }
+
+    .desc h2:hover {
+        text-decoration: underline;
+    }
+
+    .task {
+        flex-direction: column;
+        gap: 0.5em;
+        position: relative;
+        padding-right: 0;
+    }
+
+    .task__list {
+        display: block;
+        width: 90%;
+        text-align: center;
+    }
+
+    .fa-ellipsis {
+        position: absolute;
+        top: -140px;
+        right: 10px;
+    }
+}
