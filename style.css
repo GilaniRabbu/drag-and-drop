@@ -1,0 +1,240 @@
+:root {
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    background-color: rgb(243, 245, 247);
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+
+img,
+svg,
+video,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* Reset */
+
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2em;
+}
+
+.logo {
+    margin: 0.5em;
+}
+
+.logo a {
+    color: rgb(192, 193, 199);
+    background-color: rgb(236, 238, 242);
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+}
+
+.logo a:hover {
+    opacity: 0.85;
+}
+
+.header__icon {
+    display: flex;
+    gap: 1.2em;
+    align-items: center;
+}
+
+.add__btn {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 46, 77);
+    padding: 15px 10px 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.user__icon {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(245, 249, 252);
+    background-color: rgb(207, 212, 226);
+}
+
+.user__text {
+    color: rgb(137, 139, 143);
+    margin: 0 5px;
+}
+
+.user__clr {
+    cursor: pointer;
+    color: rgb(137, 139, 143);
+}
+
+/* Header */
+
+
+
+/* Navbar */
+
+nav {
+    padding: 3em 0;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nav__title {
+    color: rgb(36, 29, 86);
+    font-size: var(--size-3xl);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.nav__desc {
+    color: rgb(137, 139, 143);
+    font-size: var(--size-sm);
+    line-height: 1.5;
+}
+
+.icon__group {
+    display: flex;
+    gap: 1em;
+}
+
+.icon__group i {
+    font-size: var(--size-lg);
+}
+
+.fa-magnifying-glass {
+    cursor: pointer;
+    color: rgb(137, 139, 143);
+}
+
+.fa-border-all {
+    cursor: pointer;
+    color: rgb(91, 92, 112);
+}
+
+.fa-bars {
+    cursor: pointer;
+    color: rgb(130, 138, 224);
+}
+
+/* Navbar */
+
+
+
+/* Main Section */
+
+main {
+    padding: 1em 0 3em;
+}
+
+section {
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.flow-content>*+* {
+    margin-top: 1.5em;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.desc img {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.desc h2 {
+    color: rgb(35, 35, 74);
+    font-size: var(--size-lg);
+    font-weight: 600;
+}
+
+.task {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.task__due {
+    font-size: var(--size-sm);
+    color: rgb(221, 109, 97);
+}
+
+.task__list {
+    font-size: var(--size-sm);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: rgb(35, 35, 74);
+    background-color: rgb(243, 245, 247);
+}
+
+.fa-ellipsis {
+    cursor: pointer;
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
+    color: rgb(35, 46, 77);
+    background-color: rgb(243, 245, 247);
+}
+
+.fa-ellipsis:hover {
+    opacity: 0.85;
+}
+
+/* Main Section */
