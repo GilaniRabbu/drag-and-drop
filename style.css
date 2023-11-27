@@ -181,6 +181,7 @@ nav {
     visibility: hidden;
     width: 80px;
     font-size: var(--size-xxs);
+    letter-spacing: 1px;
     padding: 10px 0;
     text-align: center;
     border-radius: 5px;
