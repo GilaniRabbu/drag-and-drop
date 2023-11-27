@@ -26,7 +26,7 @@
             </div>
         </div>
     </header>
-    <nav class="container">
+    <nav>
         <div class="nav__row">
             <div class="title__desc">
                 <h1 class="nav__title">My Boards</h1>
@@ -34,16 +34,18 @@
             </div>
             <div class="icon__group">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-border-all"></i>
+                <i class="fa-solid fa-border-all tooltip">
+                    <span class="tooltip-text">Cards View</span>
+                </i>
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </nav>
     <main>
-        <div class="container flow-content" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="container flow-content flex__group" ondrop="drop(event)" ondragover="allowDrop(event)">
             <section draggable="true" ondragstart="drag(event)" ondragover="dragOver(event)" ondrop="drop(event)">
                 <div class="desc">
-                    <img src="https://i.postimg.cc/L5zV0nSs/img-01.png" alt="..." width="50">
+                    <img src="img/img-01.png" alt="..." width="50">
                     <h2>Benjamin Franklin's Method of Habit Formation</h2>
                 </div>
                 <div class="task">
@@ -54,17 +56,18 @@
             </section>
             <section draggable="true" ondragstart="drag(event)" ondragover="dragOver(event)" ondrop="drop(event)">
                 <div class="desc">
-                    <img src="https://i.postimg.cc/v89XmSnd/img-02.png" alt="..." width="50">
+                    <img src="img/img-02.png" alt="..." width="50">
                     <h2>Increasing Prosperity with Positive Thinking</h2>
                 </div>
                 <div class="task">
+                    <p class="task__due none">No tasks are overdue</p>
                     <p class="task__list">12 of 25 tasks done</p>
                     <i class="fa-solid fa-ellipsis"></i>
                 </div>
             </section>
             <section draggable="true" ondragstart="drag(event)" ondragover="dragOver(event)" ondrop="drop(event)">
                 <div class="desc">
-                    <img src="https://i.postimg.cc/JnHxZpdZ/img-03.png" alt="..." width="50">
+                    <img src="img/img-03.png" alt="..." width="50">
                     <h2>Motivational Sayings Ten Great Ones</h2>
                 </div>
                 <div class="task">
@@ -75,10 +78,11 @@
             </section>
             <section draggable="true" ondragstart="drag(event)" ondragover="dragOver(event)" ondrop="drop(event)">
                 <div class="desc">
-                    <img src="https://i.postimg.cc/C5yNNbWt/img-04.png" alt="..." width="50">
+                    <img src="img/img-04.png" alt="..." width="50">
                     <h2>Discover Little Known Secrets</h2>
                 </div>
                 <div class="task">
+                    <p class="task__due none">No tasks are overdue</p>
                     <p class="task__list">12 of 25 tasks done</p>
                     <i class="fa-solid fa-ellipsis"></i>
                 </div>
